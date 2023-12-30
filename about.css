@@ -5,17 +5,31 @@
 #about{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding: 5px;
+    width:  100%;
+}
+#about img{
+    display: flex;
+    margin: 1px;
+    padding-left: 5pc;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 360px;
 
+    object-fit: cover;
 }
 
-@media screen and(min-width: 414px) {
-    #about{
-         flex-direction: column;
-         height: 50vh;
-
-    }
+#about p {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    
 }
+
 
 #about h2{
     display: flex;
@@ -23,4 +37,24 @@
      text-align: center;
      justify-content: center;
     align-items: center;
+    padding: 4px;
+}
+
+
+
+@media  screen and(min-width : 414px) {
+    #about{
+         flex-direction: column;
+         height: 50vh;
+
+    }
+    #about p {
+        display: flex;
+        flex-direction: column;
+        width: 250px;   
+    }
+    #about img {
+        left: 10px;
+        position: absolute;
+    }
 }
